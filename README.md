@@ -9,6 +9,8 @@
 - go to .config directory `cd ~/.config`
 - clone repo `git clone https://github.com/Talandar99/tmux_config` 
 - rename it `mv tmux_config tmux`
+- launch tmux 
+- install plugins by pressing `prefix`,`[I]`
 
 ## How to upadate?
 - go into tmux directory `cd ~/.config/tmux`
@@ -16,7 +18,7 @@
 
 ## Keybinds
 - prefix `[Alt]`+`[q]`
-- vertical split `prefix`+`["]`
-- maximize split (toggle) `prefix`+`[m]`
+- vertical split `prefix`,`["]`
+- maximize split (toggle) `prefix`,`[m]`
 - movement is based on vim keybinds so use `[h]` `[j]` `[k]` `[l]` instead of arrows
-- relaad configuration after changes `prefix`+[R]
+- relaad configuration after changes `prefix`,`[R]`
