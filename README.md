@@ -11,7 +11,6 @@
 - rename it `mv tmux_config tmux`
 - launch tmux 
 - install plugins by pressing `prefix`,`[I]`
-  - default prefix is `[Control]`+`[b]`
 
 ## How to upadate?
 - go into tmux directory `cd ~/.config/tmux`
