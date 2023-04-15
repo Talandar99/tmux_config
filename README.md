@@ -12,6 +12,11 @@
 - launch tmux 
 - install plugins by pressing `prefix`,`[I]`
   - default prefix is `[Control]`+`[b]`
+- add this to your .bashrc:
+```bash
+export PATH=$PATH:$HOME/.config/tmux/plugins/tmuxifier/bin
+eval "$(tmuxifier init -)"
+```
 
 ## How to upadate?
 - go into tmux directory `cd ~/.config/tmux`
