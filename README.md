@@ -1,7 +1,7 @@
 # tmux_config
 
 ## Requirements
-- linux filesystem
+- unix based filesystem
 - tmux installed 
 - git 	
 
