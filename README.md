@@ -41,3 +41,30 @@ tmuxifier new-session session_name
 tmuxifier load-session session_name
 ```
 4. sessions are stored as bash script in $HOME/.config/tmux/plugins/layouts
+
+#### Example (tmuxifier session config)
+```Bash
+# Set a custom session root path. Default is `$HOME`.
+# Must be called before `initialize_session`.
+session_root "~/session_name/"
+
+# Create session with specified name if it does not already exist. If no
+# argument is given, session name will be based on layout file name.
+if initialize_session "session_name"; then
+
+    # Create a new window inline within session layout definition.
+	new_window "session_name"
+    
+    # Split horizontal
+	split_h 5
+    
+    # select pane nr 1 
+	select_pane 1
+    
+    # run command
+	run_cmd "ls -all"
+fi
+
+# Finalize session creation and switch/attach to it.
+finalize_and_go_to_session
+```
