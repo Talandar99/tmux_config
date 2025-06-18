@@ -14,7 +14,8 @@ if [[ -z $SELECTED ]]; then
     exit 0
 fi
 
-SELECTED_NAME=$(basename "$SELECTED" | tr . _)
+SELECTED_NAME="$(basename $(dirname $SELECTED ) | tr . _)/$(basename $SELECTED | tr . _)"
+#SELECTED_NAME=$(basename "$SELECTED" )
 tmux_running=$(pgrep tmux)
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
